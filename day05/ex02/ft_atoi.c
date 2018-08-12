@@ -6,7 +6,7 @@
 /*   By: aguiot-- <aguiot--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/06 19:44:36 by aguiot--          #+#    #+#             */
-/*   Updated: 2018/08/09 01:44:47 by aguiot--         ###   ########.fr       */
+/*   Updated: 2018/08/09 10:58:35 by aguiot--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ int		ft_atoi(char *str)
 
 	i = 0;
 	nbr = 0;
-	neg = 0;
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\f'
 			|| str[i] == '\r' || str[i] == '\v')
 		i++;
@@ -37,5 +36,5 @@ int		ft_atoi(char *str)
 		nbr = nbr + (str[i] - '0');
 		i++;
 	}
-	return (neg ? -nbr : nbr);
+	return (neg == 1 ? -nbr : nbr);
 }

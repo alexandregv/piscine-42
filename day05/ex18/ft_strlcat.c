@@ -6,18 +6,15 @@
 /*   By: aguiot-- <aguiot--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/07 19:07:05 by aguiot--          #+#    #+#             */
-/*   Updated: 2018/08/09 01:54:12 by aguiot--         ###   ########.fr       */
+/*   Updated: 2018/08/11 20:04:55 by aguiot--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
-
 unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
-	int length;
-	int i;
-	int j;
+	unsigned int length;
+	unsigned int i;
+	unsigned int j;
 
 	length = 0;
 	while (dest[length] != '\0')
@@ -33,9 +30,4 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	while (src[j] != '\0')
 		j++;
 	return (length + i);
-}
-
-int		main()
-{
-	printf("", );
 }

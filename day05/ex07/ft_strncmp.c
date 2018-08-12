@@ -6,16 +6,16 @@
 /*   By: aguiot-- <aguiot--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/07 04:32:11 by aguiot--          #+#    #+#             */
-/*   Updated: 2018/08/07 11:45:37 by aguiot--         ###   ########.fr       */
+/*   Updated: 2018/08/09 14:32:29 by aguiot--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int i;
+	unsigned int i;
 
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i] && i < n)
+	while (s1[i] && s2[i] && s1[i] == s2[i] && i < n - 1 && n > 0)
 		i++;
 	return (s1[i] - s2[i]);
 }

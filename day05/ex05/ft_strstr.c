@@ -6,15 +6,19 @@
 /*   By: aguiot-- <aguiot--@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/08/06 20:51:51 by aguiot--          #+#    #+#             */
-/*   Updated: 2018/08/07 12:20:45 by aguiot--         ###   ########.fr       */
+/*   Updated: 2018/08/09 10:57:37 by aguiot--         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
 
 char	*ft_strstr(char *str, char *to_find)
 {
 	int pos1;
 	int pos2;
 
+	if (to_find[0] == '\0')
+		return (str);
 	pos1 = 0;
 	while (str[pos1] != '\0')
 	{
